@@ -12,6 +12,12 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+.header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
 body {
     margin: 0
 }
