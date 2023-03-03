@@ -14,10 +14,10 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<script>
-	var num = 0
+		var num = 0
 	function question_or_answer(){
 		if (num == 0){
-			document.getElementById("1").innerHTML="第一题-答案：精\n";
+			document.getElementById("1-2").innerHTML="第一题-答案：精\n";
 			num += 1
 			return
 		}
@@ -66,12 +66,18 @@
 						</li>
 					</ol>
 				</nav>
-				<p>第一题-题目：大米青菜一起吞</p>
-				<p id="1"></p>
-				<p id="2-1"></p>
-				<p id="2-2"></p>
-				<p id="3-1"></p>
-				<p id="3-2"></p>
+				<div class="header">
+					<hr width=’80%’>
+					<p id="1-1">第一题-题目：大米青菜一起吞</p>
+					<p id="1-2"></p>
+					<hr width=’80%’>
+					<p id="2-1"></p>
+					<p id="2-2"></p>
+					<hr width=’80%’>
+					<p id="3-1"></p>
+					<p id="3-2"></p>
+					<hr width=’80%’>
+				</div>
 				<button onclick="question_or_answer()" class="btn btn-sm btn-block btn-outline-primary" _msttexthash="6265571" _msthidden="1" _msthash="538">
 						下一题
 				</button>
