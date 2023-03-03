@@ -15,33 +15,63 @@
 	<link href="css/style.css" rel="stylesheet">
 	<script>
 		var num = 0
-	function question_or_answer(){
-		if (num == 0){
-			document.getElementById("1-2").innerHTML="第一题-答案：精\n";
-			num += 1
-			return
+		function question_or_answer(){
+			if (num == 0){
+				document.getElementById("1-2").innerHTML="第一题-答案：精\n";
+				num += 1
+				return
+			}
+			if (num == 1){
+				document.getElementById("2-1").innerHTML="第二题-题目：身边有个和尚\n";
+				num += 1
+				return
+			}
+			if (num == 2){
+				document.getElementById("2-2").innerHTML="第二题-答案：躺\n";
+				num += 1
+				return
+			}
+			if (num == 3){
+				document.getElementById("3-1").innerHTML="第三题-题目：树上挂着白毛巾\n";
+				num += 1
+				return
+			}
+			if (num == 4){
+				document.getElementById("3-2").innerHTML="第三题-答案：棉\n";
+				num += 1
+				return
+			}
+			if (num == 5){
+				document.getElementById("4-1").innerHTML="第四题-题目：厂里有个白小子";
+				num+=1
+				return
+			}
+			if (num == 6){
+				document.getElementById("4-2").innerHTML="第四题-答案：原";
+				num+=1
+				return
+			}
+			if (num == 7){
+				document.getElementById("5-1").innerHTML="第五题-题目：口里吃个大玉米";
+				num+=1
+				return
+			}
+			if (num == 8){
+				document.getElementById("5-2").innerHTML="第五题-答案：国";
+				num+=1
+				return
+			}
+			if (num == 9){
+				document.getElementById("6-1").innerHTML="第六题-题目：两个先生捡贝壳";
+				num+=1
+				return
+			}
+			if (num == 10){
+				document.getElementById("6-2").innerHTML="第六题-答案：赞";
+				num+=1
+				return
+			}
 		}
-		if (num == 1){
-			document.getElementById("2-1").innerHTML="第二题-题目：身边有个和尚\n";
-			num += 1
-			return
-		}
-		if (num == 2){
-			document.getElementById("2-2").innerHTML="第二题-答案：躺\n";
-			num += 1
-			return
-		}
-		if (num == 3){
-			document.getElementById("3-1").innerHTML="第三题-题目：树上挂着白毛巾\n";
-			num += 1
-			return
-		}
-		if (num == 4){
-			document.getElementById("3-2").innerHTML="第三题-答案：棉\n";
-			num += 1
-			return
-		}
-	}
 	</script>
 
 </head>
@@ -49,6 +79,7 @@
 <body>
 	<div class="header">
 		<h1>猜字谜</h1>
+		<p>第二小组=>猜字谜=>素材</p>
 	</div>
 	<br>
 	<div class="container-fluid" _msthidden="5">
@@ -65,8 +96,11 @@
 						<li class="breadcrumb-item" _msthidden="1">
 							<a href="#" _msttexthash="2136498" _msthidden="1" _msthash="534">第三单元</a>
 						</li>
+						<li class="breadcrumb-item" _msthidden="1">
+							<a href="#" _msttexthash="2136498" _msthidden="1" _msthash="534">猜字谜</a>
+						</li>
 						<li class="breadcrumb-item active" _msttexthash="5010304" _msthidden="1" _msthash="536">
-							猜字谜
+							index.html
 						</li>
 					</ol>
 				</nav>
@@ -80,6 +114,15 @@
 					<hr width=’80%’>
 					<p id="3-1"></p>
 					<p id="3-2"></p>
+					<hr width=’80%’>
+					<p id="4-1"></p>
+					<p id="4-2"></p>
+					<hr width=’80%’>
+					<p id="5-1"></p>
+					<p id="5-2"></p>
+					<hr width=’80%’>
+					<p id="6-1"></p>
+					<p id="6-2"></p>
 					<hr width=’80%’>
 				</div>
 				<button onclick="question_or_answer()" class="btn btn-sm btn-block btn-outline-primary" _msttexthash="6265571" _msthidden="1" _msthash="538">
