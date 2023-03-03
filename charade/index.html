@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>猜字谜</title>
+
+	<meta name="description" content="Source code generated using layoutit.com">
+	<meta name="author" content="LayoutIt!">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script>
+	var num = 0
+	function question_or_answer(){
+		if (num == 0){
+			document.getElementById("1").innerHTML="第一题-答案：精\n";
+			num += 1
+			return
+		}
+		if (num == 1){
+			document.getElementById("2-1").innerHTML="第二题-题目：身边有个和尚\n";
+			num += 1
+			return
+		}
+		if (num == 2){
+			document.getElementById("2-2").innerHTML="第二题-答案：躺\n";
+			num += 1
+			return
+		}
+		if (num == 3){
+			document.getElementById("3-1").innerHTML="第三题-题目：树上挂着白毛巾\n";
+			num += 1
+			return
+		}
+		if (num == 4){
+			document.getElementById("3-2").innerHTML="第三题-答案：棉\n";
+			num += 1
+			return
+		}
+	}
+	</script>
+
+</head>
+
+<body>
+	<div class="container-fluid" _msthidden="5">
+		<div class="row" _msthidden="5">
+			<div class="col-md-12" _msthidden="5">
+				<nav _msthidden="3">
+					<ol class="breadcrumb" _msthidden="3">
+						<li class="breadcrumb-item" _msthidden="1">
+							<a href="#" _msttexthash="2136498" _msthidden="1" _msthash="534">五年级</a>
+						</li>
+						<li class="breadcrumb-item" _msthidden="1">
+							<a href="#" _msttexthash="2136498" _msthidden="1" _msthash="534">下册</a>
+						</li>
+						<li class="breadcrumb-item" _msthidden="1">
+							<a href="#" _msttexthash="2136498" _msthidden="1" _msthash="534">第三单元</a>
+						</li>
+						<li class="breadcrumb-item active" _msttexthash="5010304" _msthidden="1" _msthash="536">
+							猜字谜
+						</li>
+					</ol>
+				</nav>
+				<p>第一题-题目：大米青菜一起吞</p>
+				<p id="1"></p>
+				<p id="2-1"></p>
+				<p id="2-2"></p>
+				<p id="3-1"></p>
+				<p id="3-2"></p>
+				<button onclick="question_or_answer()" class="btn btn-sm btn-block btn-outline-primary" _msttexthash="6265571" _msthidden="1" _msthash="538">
+						下一题
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
